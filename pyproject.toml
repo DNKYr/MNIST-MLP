@@ -1,0 +1,23 @@
+[project]
+name = "mnist-mlp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "DNKYr", email = "dnkyr2007@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.14.0",
+    "torchvision>=0.29.0",
+]
+
+[project.scripts]
+mnist-mlp = "mnist_mlp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = []
